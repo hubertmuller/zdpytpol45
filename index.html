@@ -94,5 +94,38 @@
             </table>
         </div>
 
+        <h1>Formularz</h1>
+
+        <form action="http://www.mojtst.com/form.py" method="post" name="forma">
+            <input type="text" name="imie" value="moj test" placeholder="Podaj imie" maxlength="10">
+            <input type="password" value="moj test" maxlength="10" name="haslo">
+            <input type="hidden" value="test" name="ukryte">            
+            <input type="checkbox" value="kawa" name="opcje" checked>
+            <input type="checkbox" value="ciasto" name="opcje" checked>
+            <input type="radio" value="k" name="plec" checked>
+            <input type="radio" value="m" name="plec">
+            <textarea rows="20" cols="40" name="tekst">
+Moj wpis 123
+            </textarea>
+
+            <input type="color">
+            <input type="range">
+            <input type="datetime">
+            <select name="wybrane1">
+                <option value="e1">Etykieta 1</option>
+                <option value="e2">Etykieta 2</option>
+                <option value="e3">Etykieta 3</option>
+                <option value="e3">Etykieta 4</option>
+            </select>
+            <select multiple name="wybrane2">
+                <option value="e1">Etykieta 1</option>
+                <option value="e2">Etykieta 2</option>
+                <option value="e3">Etykieta 3</option>
+                <option value="e4">Etykieta 4</option>
+            </select>
+
+
+        </form>
+
     </body>
 </html>
