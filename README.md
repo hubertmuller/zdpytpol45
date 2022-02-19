@@ -8,4 +8,7 @@ Kliknij w plik index.html
 
 ## Wymagania
 
-Pprzeglądarka wspierająca CSS HTML i JavaSript
+Pprzeglądarka wspierająca:
+- CSS 
+- __HTML__ 
+- _JavaSript_
