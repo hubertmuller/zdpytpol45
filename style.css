@@ -1,3 +1,50 @@
+@media print {
+    img {
+        display: none;
+    }
+}
+
+@media screen {
+    header p {
+        display: none;
+    }
+}
+
+p[id="info"] {
+    background-color: orange;
+}
+/* prawie takie samo znaczneie jak p[id="info"]
+p#info {
+    background-color: orange;
+}
+*/
+
+p[class="para1"] {
+    background-color: green;
+}
+
+/* takie samo znaczneie jak p[class="para1"]
+p.para1 {
+    background-color: green;
+}
+*/
+
+body fieldset p#info {
+    background-color: violet;
+}
+
+body fieldset p#info:hover {
+    background-color: red;
+}
+
 p {
     background-color: yellow;
+}
+
+fieldset p {
+    background-color: red;
+}
+
+fieldset > p {
+    background-color: blue;
 }

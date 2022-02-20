@@ -4,10 +4,22 @@
         <title>Tytuł dokumentu</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
+        <style>
+            input {
+                background-color: yellow;
+            }
+
+            body fieldset p#info {
+                background-color: grey;
+            }
+        </style>
     </head>
     <body lang="pl">
         <header>
             <img width="100%" src="obrazki/yerka.jpg" alt="Moje zdęcie" title="Moje zdjęcie title">
+            <p>
+                Wydruk pochodzi ze storny naszportal.pl
+            </p>
         </header>
         <nav>
             <a href="index2.html">Podstrona</a>
@@ -18,7 +30,7 @@
         <h3>Rozdział 1b</h3>
         <h6>Rozdział 1f</h6>
 
-        <p>
+        <p class="para1">
             Aby wyswietlic obraze użyj znacznika &lt;img src="sceizkadoobrazka"&gt;
             <br>
             lorem&nbsp;ipsum<br>et<br>dolor<br>sit  
@@ -120,18 +132,20 @@
             <input type="hidden" value="test" name="ukryte">
 
             <fieldset>
-                <p>
-                    Wybierz poczęstunek który przyrządzimy
-                </p>
-                <legend>Poczęstunek</legend>   
-                <label for="kawaid">
-                    Kawa
-                </label>
-                <input id="kawaid" type="checkbox" value="kawa" name="opcje" checked tabindex="3">
-                <label for="ciastoid">
-                    Ciasto
-                </label>
-                <input id="ciastoid" type="checkbox" value="ciasto" name="opcje" checked  tabindex="4">
+                <div>
+                    <p id="info" class="para1" style="background-color: purple;">
+                        Wybierz poczęstunek który przyrządzimy
+                    </p>
+                    <legend>Poczęstunek</legend>   
+                    <label for="kawaid">
+                        Kawa
+                    </label>
+                    <input id="kawaid" type="checkbox" value="kawa" name="opcje" checked tabindex="3">
+                    <label for="ciastoid">
+                        Ciasto
+                    </label>
+                    <input id="ciastoid" type="checkbox" value="ciasto" name="opcje" checked  tabindex="4">
+                </div>
             </fieldset> 
 
 
