@@ -10,8 +10,19 @@
     }
 }
 
+* {
+    box-sizing: border-box;
+}
+
 p[id="info"] {
-    background-color: orange;
+    background-color: rgba(150, 180, 0, 0.548);
+    /*
+    rgba(150, 180, 0, 0.548);
+    rgb(150, 180, 0);
+    #99bb00
+    #9b0
+    red
+    */
 }
 /* prawie takie samo znaczneie jak p[id="info"]
 p#info {
