@@ -12,4 +12,34 @@
 
 * {
     box-sizing: border-box;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    border: 1px solid black;
+    border-bottom-width: 0;
+    background-color: #ccc;
+    font-weight: 800;
+}
+
+th, td, caption {
+    padding: 10px;
+}
+
+th {
+    background-color: #880000;
+    color: #eeeeee;
+    text-align: left;
+}
+
+tr {
+    background-color: #d7eed7;
+}
+
+tr:hover {
+    background-color: #c8c8c8;
 }
