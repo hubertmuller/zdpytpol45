@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tytuł dokumentu</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            input {
+                background-color: yellow;
+            }
+
+            body fieldset p#info {
+                background-color: grey;
+            }
+        </style>
+    </head>
+    <body lang="pl">
+        <header>
+            <img width="100%" src="obrazki/yerka.jpg" alt="Moje zdęcie" title="Moje zdjęcie title">
+            <p>
+                Wydruk pochodzi ze storny naszportal.pl
+            </p>
+        </header>
+        <nav>
+            <a href="index2.html">Podstrona</a>
+        </nav>
+
+        <h1 title="Tytul Rozdziału">Rozdział 1</h1>
+        <h2>Rozdział 1a</h2>
+        <h3>Rozdział 1b</h3>
+        <h6>Rozdział 1f</h6>
+
+        <p class="para1">
+            Aby wyswietlic obraze użyj znacznika &lt;img src="sceizkadoobrazka"&gt;
+            <br>
+            lorem&nbsp;ipsum<br>et<br>dolor<br>sit  
+            amet <a href="http://wp.pl" target="stronawp">link do strony wp</a>
+        </p>
+
+        <ul >
+            <li>Jabłko</li>
+            <li>Śliwka</li>
+            <ul >
+                <li>Jabłko</li>
+                <li>Śliwka</li>
+                <ol>
+                    <li>Prezydent</li>
+                    <ol>
+                        <li>Prezydent</li>
+                        <li>Minister</li>
+                        <li>Prezydent</li>
+                        <li>Minister</li>
+                        <ul >
+                            <li>Jabłko</li>
+                            <li>Śliwka</li>
+                        </ul>
+                    </ol>
+                    <li>Minister</li>
+                    <li>Prezydent</li>
+                    <li>Minister</li>
+                </ol>
+            </ul>
+        </ul>
+
+        <ol>
+            <li>Prezydent</li>
+            <ol>
+                <li>Prezydent</li>
+                <li>Minister</li>
+                <li>Prezydent</li>
+                <li>Minister</li>
+                <ul >
+                    <li>Jabłko</li>
+                    <li>Śliwka</li>
+                </ul>
+            </ol>
+            <li>Minister</li>
+            <li>Prezydent</li>
+            <li>Minister</li>
+        </ol>
+
+        <div>
+            <h1 lang="en">Chapter 2</h1>
+
+            <p>
+                lorem ipsum et dolor sit <span lang="zn">amet amet amet</span>
+            </p>
+
+            <table border="1" width="100%">
+                <caption>
+                    Osoby
+                </caption>
+                <thead>
+                    <th>
+                        Imię
+                    </th>
+                    <th>
+                        Nazwisko
+                    </th>
+                    <th>
+                        Drugie imię
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ala</td>
+                        <td>kot</td>
+                        <td rowspan="3">ola</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">test</td>
+                    </tr>
+                    <tr>
+                        <td>test</td>
+                        <td>test</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h1>Formularz</h1>
+
+        <form action="http://www.mojtst.com/form.py" method="post" name="forma">
+            <label for="imieid">
+                Imię
+            </label>
+            <input id="imieid" type="text" name="imie" value="moj test" placeholder="Podaj imie" maxlength="10" tabindex="1">
+            <label for="hasloid">
+                Hasło
+            </label>
+            <input id="hasloid" type="password" value="moj test" maxlength="10" name="haslo" tabindex="7">
+            <input type="hidden" value="test" name="ukryte">
+
+            <fieldset>
+                <div>
+                    <p id="info" class="para1" style="background-color: purple;">
+                        Wybierz poczęstunek który przyrządzimy
+                    </p>
+                    <legend>Poczęstunek</legend>   
+                    <label for="kawaid">
+                        Kawa
+                    </label>
+                    <input id="kawaid" type="checkbox" value="kawa" name="opcje" checked tabindex="3">
+                    <label for="ciastoid">
+                        Ciasto
+                    </label>
+                    <input id="ciastoid" type="checkbox" value="ciasto" name="opcje" checked  tabindex="4">
+                </div>
+            </fieldset> 
+
+
+            <fieldset>
+                <legend>Płeć</legend>   
+                <label for="mezid">
+                   mężczyzna
+                </label>
+                <input id="mezid" type="radio" value="k" name="plec" checked  tabindex="5">
+                <label for="kobid">
+                    kobieta
+                </label>
+                <input id="kobid" type="radio" value="m" name="plec" tabindex="6">
+            </fieldset> 
+
+
+            <label for="komentarzid">
+                Komentarz
+            </label>
+            <textarea id="komentarzid" rows="20" cols="40" name="komentarz" tabindex="2" accesskey="g">
+Moj wpis 123
+            </textarea>
+
+            <!-- rzadziej uzywane znaczniki
+            
+            <input type="color" tabindex="8" name="kolor">
+            <input type="range" tabindex="9">
+            <input type="datetime">
+                        
+            -->
+
+            <label for="zwierzeid">
+                Posiadane zwierzę
+            </label>
+            <select id="zwierzeid" name="wybrane1">
+                <option value="e1">Kot</option>
+                <option value="e2">Pies</option>
+                <option value="e3">Chomik</option>
+                <option value="e3">Kanarek</option>
+            </select>
+            <select multiple name="wybrane2">
+                <option value="e1">Etykieta 1</option>
+                <option value="e2">Etykieta 2</option>
+                <option value="e3">Etykieta 3</option>
+                <option value="e4">Etykieta 4</option>
+            </select>
+
+            <input type="submit" value="Wyślij">
+            <input type="button" value="Wyślij">
+            
+
+        </form>
+
+    </body>
+</html>
