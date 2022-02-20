@@ -2,16 +2,26 @@
 <html>
     <head>
         <title>Tytuł dokumentu</title>
+        <meta charset="UTF-8">
     </head>
     <body lang="pl">
+        <header>
+            <img width="100%" src="yerka.jpg" alt="Moje zdęcie" title="Moje zdjęcie title">
+        </header>
+        <nav>
+            <a href="index2.html">Podstrona</a>
+        </nav>
 
-        <h1>Rozdział 1</h1>
+        <h1 title="Tytul Rozdziału">Rozdział 1</h1>
         <h2>Rozdział 1a</h2>
         <h3>Rozdział 1b</h3>
         <h6>Rozdział 1f</h6>
 
         <p>
-            lorem ipsum et dolor sit amet <a href="http://wp.pl" target="stronawp">link do strony wp</a>
+            Aby wyswietlic obraze użyj znacznika &lt;img src="sceizkadoobrazka"&gt;
+            <br>
+            lorem&nbsp;ipsum<br>et<br>dolor<br>sit  
+            amet <a href="http://wp.pl" target="stronawp">link do strony wp</a>
         </p>
 
         <ul >
@@ -98,25 +108,68 @@
         <h1>Formularz</h1>
 
         <form action="http://www.mojtst.com/form.py" method="post" name="forma">
-            <input type="text" name="imie" value="moj test" placeholder="Podaj imie" maxlength="10" tabindex="1">
-            <input type="password" value="moj test" maxlength="10" name="haslo" tabindex="7">
-            <input type="hidden" value="test" name="ukryte">            
-            <input type="checkbox" value="kawa" name="opcje" checked tabindex="3">
-            <input type="checkbox" value="ciasto" name="opcje" checked  tabindex="4">
-            <input type="radio" value="k" name="plec" checked  tabindex="5">
-            <input type="radio" value="m" name="plec" tabindex="6">
-            <textarea rows="20" cols="40" name="tekst" tabindex="2" accesskey="g">
+            <label for="imieid">
+                Imię
+            </label>
+            <input id="imieid" type="text" name="imie" value="moj test" placeholder="Podaj imie" maxlength="10" tabindex="1">
+            <label for="hasloid">
+                Hasło
+            </label>
+            <input id="hasloid" type="password" value="moj test" maxlength="10" name="haslo" tabindex="7">
+            <input type="hidden" value="test" name="ukryte">
+
+            <fieldset>
+                <p>
+                    Wybierz poczęstunek który przyrządzimy
+                </p>
+                <legend>Poczęstunek</legend>   
+                <label for="kawaid">
+                    Kawa
+                </label>
+                <input id="kawaid" type="checkbox" value="kawa" name="opcje" checked tabindex="3">
+                <label for="ciastoid">
+                    Ciasto
+                </label>
+                <input id="ciastoid" type="checkbox" value="ciasto" name="opcje" checked  tabindex="4">
+            </fieldset> 
+
+
+            <fieldset>
+                <legend>Płeć</legend>   
+                <label for="mezid">
+                   mężczyzna
+                </label>
+                <input id="mezid" type="radio" value="k" name="plec" checked  tabindex="5">
+                <label for="kobid">
+                    kobieta
+                </label>
+                <input id="kobid" type="radio" value="m" name="plec" tabindex="6">
+            </fieldset> 
+
+
+            <label for="komentarzid">
+                Komentarz
+            </label>
+            <textarea id="komentarzid" rows="20" cols="40" name="komentarz" tabindex="2" accesskey="g">
 Moj wpis 123
             </textarea>
 
+            <!-- rzadziej uzywane znaczniki
+            
             <input type="color" tabindex="8" name="kolor">
             <input type="range" tabindex="9">
             <input type="datetime">
-            <select name="wybrane1">
-                <option value="e1">Etykieta 1</option>
-                <option value="e2">Etykieta 2</option>
-                <option value="e3">Etykieta 3</option>
-                <option value="e3">Etykieta 4</option>
+                        
+            -->
+
+            <label for="zwierzeid">
+                Posiadane zwierzę
+            </label>
+            <select id="zwierzeid" name="wybrane1">
+                <option value="e1">Kot</option>
+                <option value="e2">Pies</option>
+                <option value="e3">Chomik</option>
+                <option value="e3">Kanarek</option>
             </select>
             <select multiple name="wybrane2">
                 <option value="e1">Etykieta 1</option>
