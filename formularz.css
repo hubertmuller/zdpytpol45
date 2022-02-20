@@ -43,3 +43,41 @@ tr {
 tr:hover {
     background-color: #c8c8c8;
 }
+
+input[type="text"], input[type="password"], textarea, select, [type="submit"] {
+    padding: 10px;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    width: 100%;
+}
+
+[type="submit"] {
+    background-color: rgb(172, 31, 31);
+    margin-top: 20px;
+    color:#eee;
+}
+
+[type="submit"]:hover {
+    background-color: rgb(124, 0, 0);
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    padding: 10px;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+legend {
+    font-weight: 700;
+}
+
+fieldset label {
+    display: inline;
+}
