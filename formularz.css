@@ -12,7 +12,27 @@
 
 * {
     box-sizing: border-box;
-    font-family: Arial, Tahoma, sans-serif;
+    font-family: Roboto, Arial, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+html {
+    font-size: 15px;
+}
+
+h1, h3 {
+    font-family: "Roboto Serif", Arial, Tahoma, sans-serif;
+    font-weight: 600;
+
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 table {
