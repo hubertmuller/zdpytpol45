@@ -156,3 +156,14 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.blad {
+    display: none;
+}
+
+.blad.wystapil {
+    color:rgb(255, 21, 21);
+    display: inline;
+    padding-left: 20px;
+    
+}

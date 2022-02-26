@@ -18,7 +18,7 @@
                     Jan Kowalski Gallery
                 </div>
                 <div class="menu">
-                    ( <span onclick="zmien('30px')">+</span> / <span onclick="zmien('20px')">-</span> ) Menu
+                    ( <span onclick="zmien(0)">+</span> / <span onclick="zmien('20px')">-</span> ) Menu
                 </div>
             </div>
             <img src="obrazki/yerka.jpg" alt="Moje zdęcie" title="Moje zdjęcie title">
@@ -125,8 +125,8 @@
             </p>
             
             <label for="imieid">
-                Imię
-            </label>
+                Imię <span class="blad">Nieprawidłowe imię</span>
+            </label> 
             <input id="imieid" type="text" name="imie" value="" placeholder="podaj nazwisko np.Jan" maxlength="10" tabindex="1">
             <label for="nazwiskoid">
                 Nazwisko
